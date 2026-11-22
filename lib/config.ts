@@ -11,10 +11,8 @@
  * No Gemini key ever lives in this file or in app code; the key is
  * server-side only in the /api/reflect function.
  */
-
 /** Deployed origin for native, or '' to use same-origin /api on web. */
 export const API_BASE = (process.env.EXPO_PUBLIC_API_URL ?? '').trim().replace(/\/$/, '');
-
 /**
  * Set to true once the Firebase project for MoodJournal exists and
  * the values in lib/firebase.ts / lib/firebase.native.ts are the
@@ -22,4 +20,4 @@ export const API_BASE = (process.env.EXPO_PUBLIC_API_URL ?? '').trim().replace(/
  * TODO-MOODJOURNAL placeholders in both files; wiring is a
  * publish step.
  */
-export const firebaseConfigured = false;
+export const firebaseConfigured = true;
